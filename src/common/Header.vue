@@ -1,6 +1,8 @@
 <template>
   <div id="header">
-    <img v-on:click="backToHome" draggable="false" src="../assets/logo.png">
+    <svg v-on:click="backToHome" class="icon" aria-hidden="true">
+      <use xlink:href="#icon-vue"></use>
+    </svg>
   </div>
 </template>
 
@@ -13,3 +15,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#header svg {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+</style>

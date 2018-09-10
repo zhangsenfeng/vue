@@ -4,6 +4,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import App from './App'
 import router from './router'
+// 通过fontclass引入iconfont
+import './assets/iconfont/iconfont.css'
 
 Vue.config.productionTip = true
 

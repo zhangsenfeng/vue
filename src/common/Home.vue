@@ -1,7 +1,9 @@
 <template>
   <div id="home">
     <div :class="{animation}">
-      <img v-on:click="toBody" draggable="false" src="../assets/logo.png">
+      <svg v-on:click="toBody" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-vue"></use>
+      </svg>
       <span v-on:click="toBody">Click Here To Begin</span>
     </div>
   </div>
@@ -57,7 +59,9 @@ export default {
   >div {
     padding: 100px 30% 0 30%;
 
-    img {
+    svg {
+      height: 200px;
+      width: 200px;
       margin-top: 60px;
       cursor: pointer;
     }
@@ -71,7 +75,7 @@ export default {
   >div.animation {
     animation: div_begin 0.75s;
 
-    img {
+    svg {
       animation: img_begin 0.75s;
     }
 
