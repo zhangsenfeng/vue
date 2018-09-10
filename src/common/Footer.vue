@@ -1,9 +1,5 @@
 <template>
   <div id="footer">
-    FOOTER
+    <span>author: zhangsenfeng</span>
   </div>
 </template>
-
-<script>
-export default {}
-</script>

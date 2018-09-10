@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <img v-on:click="toHomePage" src="../assets/logo.png">
+    <img v-on:click="toHomePage" draggable="false" src="../assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -49,8 +49,7 @@ export default {
   },
   methods: {
     toHomePage: function () {
-      console.log('toHomePage')
-      this.$router.push('Home')
+      this.$router.push('home')
     }
   }
 }
@@ -72,5 +71,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.hello {
+  text-align: center;
 }
 </style>
